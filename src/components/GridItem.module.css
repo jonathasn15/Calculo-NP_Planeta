@@ -1,0 +1,33 @@
+.main{
+    flex:1;
+    color: #FFF;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+
+}
+.gridIcon{
+    width: 20px;
+    height: 20px;
+    border-radius:  50%;
+    background-color: rgba(0,0,0,0.1) ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.gridTitle{
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 3px;
+}
+.gridInfo{
+    font-size: 9px;
+    margin-top: 10px;
+}
+.yorImc{
+    font-size: 17px;
+    margin: 10px 0 50px 0;
+}
