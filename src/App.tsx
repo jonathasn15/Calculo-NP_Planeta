@@ -38,6 +38,7 @@ const handleBackButton = () =>{
 
       <div className={styles.leftSide}>
         <h1>Quitação de Debitos.</h1>
+        <p>Informe a data do <strong>ULTIMO VENCIMENTO</strong>
         <input 
         type="date"
         placeholder="Informe a data do ultimo vencimento" 
