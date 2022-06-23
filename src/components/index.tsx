@@ -28,16 +28,16 @@ export const GridItem = ({ item }: Props) => {
         
         {item.title === 'Faixa 0' &&
         <div className={styles.yorImc}>
-            Valor do desconto é: R${item.descTotal}<br/>
-            Valor a pagar: R$ <strong>{item.valorPay}</strong><br/>
-            Valor do boleto: R$ <strong>{item.valorBol}</strong>
+            Valor MÁXIMO do desconto: R${item.descTotal}<br/>
+            Valor MINIMO a pagar: R$ <strong>{item.valorPay}</strong><br/>
+            Valor MINIMO do boleto: R$ <strong>{item.valorBol}</strong>
         </div>
         }
         {item.title !== 'Faixa 0' &&
         <div className={styles.yorImc}>
-            Valor do desconto é: R${item.descTotal123}<br/>
-         Valor a pagar: R$ <strong>{item.valorPay123}.</strong><br/>
-         Valor do boleto: R$ <strong>{item.valorBol123}</strong>
+            Valor MÁXIMO do desconto: R${item.descTotal123}<br/>
+         Valor MINIMO a pagar: R$ <strong>{item.valorPay123}.</strong><br/>
+         Valor MINIMO do boleto: R$ <strong>{item.valorBol123}</strong>
         </div>
         }
         
