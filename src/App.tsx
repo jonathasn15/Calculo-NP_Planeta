@@ -37,7 +37,7 @@ const handleBackButton = () =>{
    <div className={styles.container}>
 
       <div className={styles.leftSide}>
-        <h1>Quitação de Debitos.</h1><br/>
+        <h1>Simulador de Quitações.</h1><br/>
         <p>Informe sempre a data do <strong>ULTIMO VENCIMENTO</strong></p>
         <input 
         type="date"
