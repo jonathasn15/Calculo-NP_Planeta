@@ -37,8 +37,8 @@ const handleBackButton = () =>{
    <div className={styles.container}>
 
       <div className={styles.leftSide}>
-        <h1>Quitação de Debitos.</h1>
-        <p>Informe a data do <strong>ULTIMO VENCIMENTO</strong></p>
+        <h1>Quitação de Debitos.</h1><br/>
+        <p>Informe sempre a data do <strong>ULTIMO VENCIMENTO</strong></p>
         <input 
         type="date"
         placeholder="Informe a data do ultimo vencimento" 
@@ -48,14 +48,14 @@ const handleBackButton = () =>{
          />
          <input 
         type="number"
-        placeholder="Informe o valor do debito" 
+        placeholder="Informe o valor do debito em atraso Ex: 1500,50" 
         value={valorField > 0 ? valorField : ''} 
         onChange={e => setValorField(parseFloat(e.target.value))}
         disabled={toShow ? true : false}
          />
           <input 
         type="number"
-        placeholder="Informe o valor do Juros" 
+        placeholder="Informe o valor do Juros Ex: 210,50" 
         value={jurosField > 0 ? jurosField : ''} 
         onChange={e => setJurosField(parseFloat(e.target.value))}
         disabled={toShow ? true : false}
