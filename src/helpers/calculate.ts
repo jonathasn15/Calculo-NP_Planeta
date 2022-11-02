@@ -57,6 +57,7 @@ export type faixa = {
                     levelCopy.juros = Juros;//(valor * 0.0033) * levelCopy.atraso
                     levelCopy.descTotal= levelCopy.juros * levelCopy.valorDesc;
                     levelCopy.descTotal123= (valor + levelCopy.juros) * levelCopy.valorDesc;
+                    levelCopy.descP50 = levelCopy.ValorBase - 50;
                     
                     levelCopy.valorPay=(levelCopy.juros -(levelCopy.juros * levelCopy.valorDesc)) + valor ;
                     levelCopy.valorPay123 = valor - (valor * levelCopy.valorDesc);
@@ -64,9 +65,6 @@ export type faixa = {
                     levelCopy.valorBol123= levelCopy.valorPay123+1
                      
                     //Faixa 4
-                        
-                    levelCopy.faixa4menor = "100,00";
-                    levelCopy.Faixa4maior ="50,00";
                         
                     return levelCopy;
                 }
