@@ -24,20 +24,14 @@ export type faixa = {
         //faixa 0
         { title: 'Faixa 0', color: '#F78907',desconto:'30% nos juros', valorDesc:0.30, icon:'feliz', dias:[0,180],valor:[0.01,99999999999999999],},
         { title: 'Faixa 0', color: '#F78907',desconto:'50% nos juros', valorDesc: 0.50, icon:'feliz', dias:[181,360],valor:[0.01,99999999999999999]},
-        //{ title: 'Faixa 0', color: '#F78907',desconto:'100% nos juros', valorDesc:1, icon:'feliz', dias:[361,720],valor:[0.01,99999999999999999]},
+        { title: 'Faixa 0', color: '#F78907',desconto:'100% nos juros', valorDesc:1, icon:'feliz', dias:[361,720],valor:[0.01,99999999999999999]},
         //faixa 1
-        { title: 'Faixa 1', color: '#E05A12',desconto:'50% no total da divida', valorDesc:0.50, icon:'indiferente', dias:[361,480],valor:[0.01,99999999999999999]},
-        { title: 'Faixa 1', color: '#E05A12',desconto:'60% no total da divida', valorDesc:0.60, icon:'indiferente', dias:[481,720],valor:[0.01,9999999999999999]},
-        //{ title: 'Faixa 1', color: '#E05A12',desconto:'60% no total da divida', valorDesc:0.70, icon:'indiferente', dias:[721,1440],valor:[1000,2000]},
-        //{ title: 'Faixa 1', color: '#E05A12',desconto:'70% no total da divida', valorDesc:0.80, icon:'indiferente' , dias:[721,1440],valor:[2000,999999999999999]},
-        //faixa 2
-        //{ title: 'Faixa 2', color: '#F0011A',desconto:'50% no principal', valorDesc:0.50, icon:'entediado', dias:[1441,1800],valor:[0.01,500]},
-        //{ title: 'Faixa 2', color: '#F0011A',desconto:'60% no principal', valorDesc:0.60, icon:'entediado', dias:[1441,1800],valor:[500,1000]},
-        { title: 'Faixa 2', color: '#F0011A',desconto:'70% total da divida', valorDesc:0.70, icon:'entediado', dias:[721,1080],valor:[0.01,9999999999999999]},
-        { title: 'Faixa 2', color: '#F0011A',desconto:'80% total da divida', valorDesc:0.80, icon:'entediado' , dias:[1081,1440],valor:[0.01,99999999999999]},
+        { title: 'Faixa 1', color: '#E05A12',desconto:'50% no Princiapal', valorDesc:0.50, icon:'indiferente', dias:[361,1440],valor:[0.01,99999999999999999]},
+        { title: 'Faixa 2', color: '#F0011A',desconto:'60% no Princiapal', valorDesc:0.70, icon:'indiferente', dias:[1441,1800],valor:[0.01,9999999999999999]},
+        { title: 'Faixa 3', color: '#F0011A',desconto:'70% no Princiapal', valorDesc:0.80, icon:'indiferente' , dias:[1801,3600],valor:[0.01,99999999999999]},
         //faixa 3
-        { title: 'Faixa 3', color: '#A80C00',desconto:'90% no principal', valorDesc:0.90, icon:'entediado', dias:[1440,2000],valor:[0.01,99999999999999]},
-        { title: 'Faixa 3', color: '#A80C00',desconto:'95% no principal', valorDesc:0.95, icon:'entediado', dias:[2001,99999],valor:[0.01,999999999999999]},
+        { title: 'Faixa 4', color: '#A80C00',desconto:'Valor Promocional Fixo de R$ 100,00', valorDesc:0, icon:'entediado', dias:[3601,5400],valor:[0.01,99999999999999]},
+        { title: 'Faixa 4', color: '#A80C00',desconto:'Valor Promocional Fixo de R$ 50,00', valorDesc:0, icon:'entediado', dias:[5401,999999999],valor:[0.01,999999999999999]},
         
     ];
     
