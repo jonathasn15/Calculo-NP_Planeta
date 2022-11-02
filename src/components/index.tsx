@@ -28,19 +28,40 @@ export const GridItem = ({ item }: Props) => {
         
         {item.title === 'Faixa 0' &&
         <div className={styles.yorImc}>
-            Valor MÁXIMO do desconto: R${item.descTotal}<br/>
+            Valor do desconto: R${item.descTotal}<br/>
             Valor MINIMO a pagar: R$ <strong>{item.valorPay}</strong><br/>
-            Valor MINIMO do boleto: R$ <strong>{item.valorBol}</strong>
+            Valor do boleto: R$ <strong>{item.valorBol}</strong>
         </div>
         }
-        {item.title !== 'Faixa 0' &&
+        {item.title === 'Faixa 1' &&
         <div className={styles.yorImc}>
             Valor MÁXIMO do desconto: R${item.descTotal123}<br/>
          Valor MINIMO a pagar: R$ <strong>{item.valorPay123}</strong><br/>
          Valor MINIMO do boleto: R$ <strong>{item.valorBol123}</strong>
         </div>
         }
-        
+         {item.title === 'Faixa 2' &&
+        <div className={styles.yorImc}>
+            Valor MÁXIMO do desconto: R${item.descTotal123}<br/>
+         Valor MINIMO a pagar: R$ <strong>{item.valorPay123}</strong><br/>
+         Valor MINIMO do boleto: R$ <strong>{item.valorBol123}</strong>
+        </div>
+        }
+         {item.title === 'Faixa 3' &&
+        <div className={styles.yorImc}>
+            Valor MÁXIMO do desconto: R${item.descTotal123}<br/>
+         Valor MINIMO a pagar: R$ <strong>{item.valorPay123}</strong><br/>
+         Valor MINIMO do boleto: R$ <strong>{item.valorBol123}</strong>
+        </div>
+        }
+         {item.title === 'Faixa 4' &&
+        <div className={styles.yorImc}>
+            Valor MÁXIMO do desconto: R${item.descTotal123}<br/>
+         Valor MINIMO a pagar: R$ <strong>{item.valorPay123}</strong><br/>
+         Valor MINIMO do boleto: R$ <strong>{item.valorBol123}</strong>
+        </div>
+        }
+                    
         </div>
         
         }
