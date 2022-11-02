@@ -65,8 +65,8 @@ export type faixa = {
                      
                     //Faixa 4
                         
-                    levelCopy.faixa4menor = 100;
-                    levelCopy.Faixa4maior =50;
+                    levelCopy.faixa4menor = "100,00";
+                    levelCopy.Faixa4maior ="50,00";
                         
                     return levelCopy;
                 }
