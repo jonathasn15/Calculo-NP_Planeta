@@ -57,7 +57,7 @@ export const GridItem = ({ item }: Props) => {
          {item.title === 'Faixa 4' &&
         <div className={styles.yorImc}>
             Valor MÁXIMO do desconto: R${item.descTotal123}<br/>
-         Valor MINIMO a pagar: R$ <strong>{item.valorPay123}</strong><br/>
+         Valor MINIMO a pagar: R$ <strong>{item.faixa4menor}</strong><br/>
          Valor MINIMO do boleto: R$ <strong>{item.valorBol123}</strong>
         </div>
         }
