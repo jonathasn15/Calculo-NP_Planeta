@@ -15,8 +15,7 @@ export type faixa = {
         descTotal123?:number;
         valorBol?:number;
         valorBol123?:number;
-        faixa4menor?:number;
-        faixa4maior?;number;
+        levelCopy.descP50?:number;
 
     }
     
