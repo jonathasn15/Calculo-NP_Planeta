@@ -15,6 +15,8 @@ export type faixa = {
         descTotal123?:number;
         valorBol?:number;
         valorBol123?:number;
+        faixa4menor?:number;
+        faixa4maior?;number;
 
     }
     
@@ -60,6 +62,12 @@ export type faixa = {
                     levelCopy.valorPay123 = valor - (valor * levelCopy.valorDesc);
                     levelCopy.valorBol= levelCopy.valorPay+1
                     levelCopy.valorBol123= levelCopy.valorPay123+1
+                     
+                    //Faixa 4
+                        
+                    levelCopy.faixa4menor = 100;
+                    levelCopy.Faixa4maior =50;
+                        
                     return levelCopy;
                 }
             }
