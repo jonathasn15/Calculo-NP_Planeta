@@ -61,10 +61,11 @@ export type faixa = {
                     levelCopy.descP50 = levelCopy.valorBase - 50;
                     levelCopy.descP100 = levelCopy.valorBase - 100;
                     
-                    levelCopy.valorPay=(levelCopy.juros -(levelCopy.juros * levelCopy.valorDesc)) + valor ;
-                    levelCopy.valorPay123 = valor - (valor * levelCopy.valorDesc);
-                    levelCopy.valorBol= levelCopy.valorPay+1
-                    levelCopy.valorBol123= levelCopy.valorPay123+1
+                     levelCopy.valorPay = Math.floor((levelCopy.juros -(levelCopy.juros * levelCopy.valorDesc)) + valor) ;
+                    levelCopy.valorPay123 = Math.floor(valor - (valor * levelCopy.valorDesc));
+                    levelCopy.valorBol= Math.floor(levelCopy.valorPay+1);
+                    levelCopy.valorBol123= Math.floor(levelCopy.valorPay123+1)
+                     
                      
                     //Faixa 4
                         
