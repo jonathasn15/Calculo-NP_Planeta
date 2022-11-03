@@ -78,7 +78,7 @@ body{
 .container .rightSide .grid{
     flex:1;
     display: grid;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(3,2fr);
     gap:15px;
 }
 .container .gridBig{
