@@ -23,8 +23,8 @@ export const GridItem = ({ item }: Props) => {
         </div>
         {item.atraso && 
         <div className={styles.yorImc}> Dias em atraso: {item.atraso} dias<br/>
-        Desconto de: <strong>{item.desconto}</strong><br/>
-        Valor base é: R$ {item.valorBase}<br/>
+        NP permite: <strong>{item.desconto}</strong><br/>
+        Valor Principal: R$ {item.valorBase}<br/>
         
         {item.title === 'Faixa 0' &&
         <div className={styles.yorImc}>
@@ -56,12 +56,13 @@ export const GridItem = ({ item }: Props) => {
          Valor a pagar: R$ <strong>{item.valorPay123}</strong><br/>
          Valor do boleto: R$ <strong>{item.valorBol123}</strong>
         </div>
-                  }      
-      {item.title === 'Faixa 4' &&
+        }
+                    
+        {item.title === 'Faixa 4' &&
             item.atraso <= 5400 &&
                 <div className={styles.yorImc}>
                 Valor MÁXIMO do desconto: R${item.descP50}<br/>
-                Valor a pagar: R$ <strong>100,00</strong><br/>
+                Valor pagar: R$ <strong>100,00</strong><br/>
                 Valor do boleto: R$ <strong>101,00</strong>
                 </div>
         }
@@ -69,7 +70,7 @@ export const GridItem = ({ item }: Props) => {
             item.atraso >= 5401 &&
                 <div className={styles.yorImc}>
                 Valor MÁXIMO do desconto: R${item.descP50}<br/>
-                Valor a pagar: R$ <strong>50,00</strong><br/>
+                Valor pagar: R$ <strong>50,00</strong><br/>
                 Valor do boleto: R$ <strong>51,00</strong>
                 </div>
         }
@@ -86,3 +87,4 @@ export const GridItem = ({ item }: Props) => {
         </div>
     );
 }
+
