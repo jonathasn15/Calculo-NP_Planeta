@@ -17,7 +17,7 @@ export type faixa = {
         valorBol?:number;
         valorBol123?:number;
         descP50?:number;
-
+        descP100?:number;
     }
     
     export const faixas: faixa[] = [
@@ -59,6 +59,7 @@ export type faixa = {
                     levelCopy.descTotal= levelCopy.juros * levelCopy.valorDesc;
                     levelCopy.descTotal123= (valor + levelCopy.juros) * levelCopy.valorDesc;
                     levelCopy.descP50 = levelCopy.valorBase - 50;
+                    levelCopy.descP100 = levelCopy.valorBase - 100;
                     
                     levelCopy.valorPay=(levelCopy.juros -(levelCopy.juros * levelCopy.valorDesc)) + valor ;
                     levelCopy.valorPay123 = valor - (valor * levelCopy.valorDesc);
