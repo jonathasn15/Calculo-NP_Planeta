@@ -61,7 +61,7 @@ export const GridItem = ({ item }: Props) => {
             item.atraso <= 5400 &&
                 <div className={styles.yorImc}>
                 Valor MÁXIMO do desconto: R${item.descP50}<br/>
-                Valor pagar: R$ <strong>100,00</strong><br/>
+                Valor a pagar: R$ <strong>100,00</strong><br/>
                 Valor do boleto: R$ <strong>101,00</strong>
                 </div>
         }
@@ -69,7 +69,7 @@ export const GridItem = ({ item }: Props) => {
             item.atraso >= 5401 &&
                 <div className={styles.yorImc}>
                 Valor MÁXIMO do desconto: R${item.descP50}<br/>
-                Valor pagar: R$ <strong>50,00</strong><br/>
+                Valor a pagar: R$ <strong>50,00</strong><br/>
                 Valor do boleto: R$ <strong>51,00</strong>
                 </div>
         }
