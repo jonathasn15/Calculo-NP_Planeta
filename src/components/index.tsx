@@ -79,7 +79,7 @@ export const GridItem = ({ item }: Props) => {
         }
         <div className={styles.gridInfo}>
             <>
-            Devedor de <strong>{item.dias[0]}</strong> a <strong>{item.dias[1]}</strong> dias
+            Devedor de <strong>{item.anos[0]}</strong> a <strong>{item.anos[1]}</strong> anos
             </>
         </div>
             
