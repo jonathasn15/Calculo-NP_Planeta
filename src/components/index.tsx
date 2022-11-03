@@ -56,7 +56,7 @@ export const GridItem = ({ item }: Props) => {
          Valor a pagar: R$ <strong>{item.valorPay123}</strong><br/>
          Valor do boleto: R$ <strong>{item.valorBol123}</strong>
         </div>
-                        
+                  }      
       {item.title === 'Faixa 4' &&
             item.atraso <= 5400 &&
                 <div className={styles.yorImc}>
