@@ -24,44 +24,44 @@ export const GridItem = ({ item }: Props) => {
         {item.atraso && 
         <div className={styles.yorImc}> Dias em atraso: {item.atraso} dias<br/>
         NP permite: <strong>{item.desconto}</strong><br/>
-        Valor Total: R$ {item.valorBase}<br/>
+        Valor Total: R$ {item.valorBase?.toFixed(2)}<br/>
         
         {item.title === 'Faixa 0' &&
         <div className={styles.yorImc}>
-            Valor do desconto: R${item.descTotal}<br/>
-            Valor MINIMO a pagar: R$ <strong>{item.valorPay}</strong><br/>
-            Valor do boleto: R$ <strong>{item.valorBol}</strong>
+            Valor do desconto: R${item.descTotal?.toFixed(2)}<br/>
+            Valor MINIMO a pagar: R$ <strong>{item.valorPay?.toFixed(2)}</strong><br/>
+            Valor do boleto: R$ <strong>{item.valorBol?.toFixed(2)}</strong>
         </div>
         }
                     
         {item.title === 'Faixa 1' &&
         <div className={styles.yorImc}>
-            Valor MÁXIMO do desconto: R${item.descTotal123}<br/>
-         Valor a pagar: R$ <strong>{item.valorPay123}</strong><br/>
-         Valor do boleto: R$ <strong>{item.valorBol123}</strong>
+            Valor MÁXIMO do desconto: R${item.descTotal123?.toFixed(2)}<br/>
+         Valor a pagar: R$ <strong>{item.valorPay123?.toFixed(2)}</strong><br/>
+         Valor do boleto: R$ <strong>{item.valorBol123?.toFixed(2)}</strong>
         </div>
         }
                     
          {item.title === 'Faixa 2' &&
         <div className={styles.yorImc}>
-            Valor MÁXIMO do desconto: R${item.descTotal123}<br/>
-         Valor a pagar: R$ <strong>{item.valorPay123}</strong><br/>
-         Valor do boleto: R$ <strong>{item.valorBol123}</strong>
+            Valor MÁXIMO do desconto: R${item.descTotal123?.toFixed(2)}<br/>
+         Valor a pagar: R$ <strong>{item.valorPay123?.toFixed(2)}</strong><br/>
+         Valor do boleto: R$ <strong>{item.valorBol123?.toFixed(2)}</strong>
         </div>
         }
                     
          {item.title === 'Faixa 3' &&
         <div className={styles.yorImc}>
-         Valor MÁXIMO do desconto: R${item.descTotal123}<br/>
-         Valor a pagar: R$ <strong>{item.valorPay123}</strong><br/>
-         Valor do boleto: R$ <strong>{item.valorBol123}</strong>
+         Valor MÁXIMO do desconto: R${item.descTotal123?.toFixed(2)}<br/>
+         Valor a pagar: R$ <strong>{item.valorPay123?.toFixed(2)}</strong><br/>
+         Valor do boleto: R$ <strong>{item.valorBol123?.toFixed(2)}</strong>
         </div>
         }
                     
         {item.title === 'Faixa 4' &&
             
                 <div className={styles.yorImc}>
-                Valor MÁXIMO do desconto: R${item.descP100}<br/>
+                Valor MÁXIMO do desconto: R${item.descP100?.toFixed(2)}<br/>
                 Valor pagar: R$ <strong>100,00</strong><br/>
                 Valor do boleto: R$ <strong>101,00</strong>
                 </div>}
