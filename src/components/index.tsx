@@ -24,7 +24,7 @@ export const GridItem = ({ item }: Props) => {
         {item.atraso && 
         <div className={styles.yorImc}> Dias em atraso: {item.atraso} dias<br/>
         NP permite: <strong>{item.desconto}</strong><br/>
-        Valor Total: R$ {item.valorBase?.toFixed(2)}<br/>
+        Valor Principal: R$ {item.valorBase?.toFixed(2)}<br/>
         
         {item.title === 'Faixa 0' &&
         <div className={styles.yorImc}>
