@@ -18,6 +18,7 @@ export type faixa = {
         valorBol123?:number;
         descP50?:number;
         descP100?:number;
+
     }
     
     export const faixas: faixa[] = [
@@ -32,8 +33,8 @@ export type faixa = {
         { title: 'Faixa 2', color: '#F0011A',desconto:'60% no Princiapal', valorDesc:0.70, icon:'indiferente', dias:[1441,1800],anos:[4,5],valor:[0.01,9999999999999999]},
         { title: 'Faixa 3', color: '#F0011A',desconto:'70% no Princiapal', valorDesc:0.80, icon:'indiferente' , dias:[1801,3600],anos:[5,10],valor:[0.01,99999999999999]},
         //faixa 3
-        { title: 'Faixa 4', color: '#A80C00',desconto:'Promocional Fixo de R$ 100,00', valorDesc:0, icon:'entediado', dias:[3601,999999999999999999],anos:[10,100], valor:[0.01,99999999999999]},
-        //{ title: 'Faixa 4', color: '#A80C00',desconto:'Promocional Fixo de R$ 50,00', valorDesc:0, icon:'entediado', dias:[0,0],anos:[15,100], valor:[0.01,999999999999999]},
+        { title: 'Faixa 4', color: '#A80C00',desconto:'Promocional Fixo de R$ 100,00', valorDesc:0, icon:'entediado', dias:[3601,999999999],anos:[10,100], valor:[0.01,99999999999999]},
+        //{ title: 'Faixa 4', color: '#A80C00',desconto:'Promocional Fixo de R$ 50,00', valorDesc:0, icon:'entediado', dias:[5401,999999999],anos:[15,100], valor:[0.01,999999999999999]},
         
     ];
     
@@ -61,11 +62,10 @@ export type faixa = {
                     levelCopy.descP50 = levelCopy.valorBase - 50;
                     levelCopy.descP100 = levelCopy.valorBase - 100;
                     
-                     levelCopy.valorPay = Math.floor((levelCopy.juros -(levelCopy.juros * levelCopy.valorDesc)) + valor) ;
+                    levelCopy.valorPay = Math.floor((levelCopy.juros -(levelCopy.juros * levelCopy.valorDesc)) + valor) ;
                     levelCopy.valorPay123 = Math.floor(valor - (valor * levelCopy.valorDesc));
                     levelCopy.valorBol= Math.floor(levelCopy.valorPay+1);
                     levelCopy.valorBol123= Math.floor(levelCopy.valorPay123+1)
-                     
                      
                     //Faixa 4
                         
@@ -75,10 +75,6 @@ export type faixa = {
             
         return null;
     }
-
-
-
-
 
 
 
