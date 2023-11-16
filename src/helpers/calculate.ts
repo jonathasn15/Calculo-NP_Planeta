@@ -7,9 +7,13 @@ export type faixa = {
         valor:number[];
         atraso?:number;
         desconto:string;
+        descontoAtualização:string;
         valorDesc:number;
+        valorDescAtual:number;
         descTotal?:number;
+        descTotalAtual?:number;
         valorPay?:number;
+        valorPayAtual?:number;
         valorBase?:number;
         juros?:number;
         valorPay123?:number;
@@ -17,6 +21,7 @@ export type faixa = {
         valorBol?:number;
         valorBol123?:number;
         descP50?:number;
+        validPay?:number;
         descP100?:number;
 
     }
@@ -25,15 +30,14 @@ export type faixa = {
 
 
         //faixa 0
-        { title: 'Faixa 0', color: '#F78907',desconto:'30% nos juros', valorDesc:0.30, icon:'feliz', dias:[0,180],anos:[0,0.6],valor:[0.01,99999999999999999],},
-        { title: 'Faixa 0', color: '#F78907',desconto:'50% nos juros', valorDesc: 0.50, icon:'feliz', dias:[181,360],anos:[0.6,1],valor:[0.01,99999999999999999]},
-        { title: 'Faixa 0', color: '#F78907',desconto:'100% nos juros', valorDesc:1, icon:'feliz', dias:[361,720],anos:[1,2],valor:[0.01,99999999999999999]},
+        { title: 'Faixa 0', color: '#E05550',desconto:'30% nos juros',descontoAtualização:'15% nos juros' ,valorDesc:0.30,valorDescAtual:0.15, icon:'feliz', dias:[121,180],anos:[0.4,0.6],valor:[0.01,99999999999999999],},
+        { title: 'Faixa 0', color: '#E05550',desconto:'40% nos juros',descontoAtualização:'20% nos juros' ,valorDesc: 0.40,valorDescAtual:0.20 ,icon:'feliz', dias:[181,270],anos:[0.6,1],valor:[0.01,99999999999999999]},
+        { title: 'Faixa 0', color: '#E05550',desconto:'50% nos juros',descontoAtualização:'25% nos juros' ,valorDesc:0.50,valorDescAtual:0.25 ,icon:'feliz', dias:[271,495],anos:[1,1.5],valor:[0.01,99999999999999999]},
+        { title: 'Faixa 0', color: '#E05550',desconto:'100% nos juros',descontoAtualização:'Não aplicado',valorDesc:1,valorDescAtual:0.0 ,icon:'feliz', dias:[496,720],anos:[1.5,2],valor:[0.01,99999999999999999]},
         //faixa 1
-        { title: 'Faixa 1', color: '#F0011A',desconto:'50% no Principal', valorDesc:0.50, icon:'indiferente', dias:[721,1440],anos:[2,4],valor:[0.01,99999999999999999]},
-        { title: 'Faixa 2', color: '#F0011A',desconto:'60% no Principal', valorDesc:0.60, icon:'indiferente', dias:[1441,1800],anos:[4,5],valor:[0.01,9999999999999999]},
-        { title: 'Faixa 3', color: '#F0011A',desconto:'70% no Principal', valorDesc:0.70, icon:'indiferente' , dias:[1801,3600],anos:[5,10],valor:[0.01,99999999999999]},
-        //faixa 3
-        { title: 'Faixa 4', color: '#A80C00',desconto:'Promocional Fixo de R$ 100,00', valorDesc:0, icon:'entediado', dias:[3601,999999999],anos:[10,100], valor:[0.01,99999999999999]},
+        { title: 'Faixa 1', color: '#F0011A',desconto:'85% no Total da divida',descontoAtualização:'Não aplicado', valorDesc:0.85,valorDescAtual:0.0 ,icon:'indiferente', dias:[721,1440],anos:[2,4],valor:[0.01,99999999999999999]},
+        //faixa 2
+        { title: 'Faixa 2', color: '#A80C00',desconto:'95% no Total da divida',descontoAtualização:'Não aplicado', valorDesc:0.95,valorDescAtual:0.0 ,icon:'entediado', dias:[1441,999999999],anos:[4,999], valor:[0.01,99999999999999]},
         //{ title: 'Faixa 4', color: '#A80C00',desconto:'Promocional Fixo de R$ 50,00', valorDesc:0, icon:'entediado', dias:[5401,999999999],anos:[15,100], valor:[0.01,999999999999999]},
         
     ];
@@ -55,15 +59,24 @@ export type faixa = {
                          && valor >= faixas[i].valor[0] && valor < faixas[i].valor[1]  ){
                     let levelCopy:faixa = {...faixas[i]};
                     levelCopy.atraso = parseFloat(dias.toFixed(2));
-                    levelCopy.valorBase = valor + Juros;
+                    //valores
                     levelCopy.juros = Juros;//(valor * 0.0033) * levelCopy.atraso
+                    levelCopy.valorBase = valor + Juros;
+                    
+
+                    //descontos nos juros
                     levelCopy.descTotal= levelCopy.juros * levelCopy.valorDesc;
+                    levelCopy.descTotalAtual= levelCopy.juros * levelCopy.valorDescAtual;
                     levelCopy.descTotal123= (valor + levelCopy.juros) * levelCopy.valorDesc;
+
+                    levelCopy.validPay = levelCopy.valorBase - (levelCopy.valorBase * 0.95);
                     levelCopy.descP50 = levelCopy.valorBase - 50;
                     levelCopy.descP100 = levelCopy.valorBase - 100;
                     
                     levelCopy.valorPay = (levelCopy.juros -(levelCopy.juros * levelCopy.valorDesc)) + valor 
-                    levelCopy.valorPay123 = valor - (valor * levelCopy.valorDesc);
+                    levelCopy.valorPayAtual = (levelCopy.juros -(levelCopy.juros * levelCopy.valorDescAtual)) + valor 
+
+                    levelCopy.valorPay123 = levelCopy.valorBase - (levelCopy.valorBase * levelCopy.valorDesc);
                     levelCopy.valorBol= (levelCopy.valorPay+1);
                     levelCopy.valorBol123= (levelCopy.valorPay123+1)
                      
