@@ -13,10 +13,22 @@ const [jurosField, setJurosField] = useState<number>(0);
 const [toShow, setToShow] = useState<faixa| null>(null);
 
 const handleCalculeteButton = () =>{
-  if(dateField && valorField && jurosField ){
-    setToShow(calculate(dateField,valorField,jurosField));
+
+  const now = new Date(); // Data de hoje
+  const past = new Date(dateField); // Outra data no passado
+  const diffTime =  now.valueOf() - past.valueOf() -1;
+  const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
+  //const duration = duration(now.diff(past));
+  let dias = diffDays - 1;
+
+  if(dias > 120 ){
+    if(dateField && valorField && jurosField){
+      setToShow(calculate(dateField,valorField,jurosField));
+    }else{
+      alert("Digite todos os campos!")
+    }
   }else{
-    alert("Digite todos os campos!")
+    alert("Atrasos menores que 121 dias não entram na NP!!!")
   }
 }
 
@@ -38,7 +50,7 @@ const handleBackButton = () =>{
 
       <div className={styles.leftSide}>
         <h1>Simulador de Quitações.</h1><br/>
-        <p>Informe sempre a data do <strong>ULTIMO VENCIMENTO</strong></p>
+        <p>Lembre-se!!! Informe a data de vecimento da <strong>PARCELA MAIS ATRASADA</strong>, ou seja que tem mais dias em atraso.</p>
         <input 
         type="date"
         placeholder="Informe a data do ultimo vencimento" 
