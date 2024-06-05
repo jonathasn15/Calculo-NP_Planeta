@@ -41,9 +41,7 @@ export type faixa = {
         { title: 'Faixa 1', color: '#F0011A',desconto:'50% no principal',descontoAtualização:'Não aplicado', valorDesc:0.5,valorDescAtual:0.0 ,icon:'indiferente', dias:[1441,1800],anos:[4,5],valor:[0.01,99999999999999999]},
         { title: 'Faixa 1', color: '#F0011A',desconto:'70% no principal',descontoAtualização:'Não aplicado', valorDesc:0.7,valorDescAtual:0.0 ,icon:'indiferente', dias:[1801,3600],anos:[5,10],valor:[0.01,99999999999999999]},
         { title: 'Faixa 1', color: '#F0011A',desconto:'80% no principal',descontoAtualização:'Não aplicado', valorDesc:0.8,valorDescAtual:0.0 ,icon:'indiferente', dias:[3601,999999999999999999],anos:[10,9999],valor:[0.01,99999999999999999]},
-        //faixa 2
-        { title: 'Faixa 2', color: '#A80C00',desconto:'95% no Total da divida',descontoAtualização:'Não aplicado', valorDesc:0.95,valorDescAtual:0.0 ,icon:'entediado', dias:[1441,999999999],anos:[4,999], valor:[0.01,99999999999999]},
-        //{ title: 'Faixa 4', color: '#A80C00',desconto:'Promocional Fixo de R$ 50,00', valorDesc:0, icon:'entediado', dias:[5401,999999999],anos:[15,100], valor:[0.01,999999999999999]},
+        //faixa 2 
         
     ];
     
