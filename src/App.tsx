@@ -60,7 +60,7 @@ const handleBackButton = () =>{
          />
          <input 
         type="number"
-        placeholder="Informe o valor do debito em atraso Ex: 1500,50" 
+        placeholder="Informe o valor PRINCIPAL do debito em atraso Ex: 1500,50" 
         value={valorField > 0 ? valorField : ''} 
         onChange={e => setValorField(parseFloat(e.target.value))}
         disabled={toShow ? true : false}
