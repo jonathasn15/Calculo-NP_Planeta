@@ -38,7 +38,7 @@ export type faixa = {
         //faixa 1
         { title: 'Faixa 1', color: '#F0011A',desconto:'20% no principal',descontoAtualização:'Não aplicado', valorDesc:0.2,valorDescAtual:0.0 ,icon:'indiferente', dias:[721,1080],anos:[2,3],valor:[0.01,99999999999999999]},
         { title: 'Faixa 1', color: '#F0011A',desconto:'40% no principal',descontoAtualização:'Não aplicado', valorDesc:0.4,valorDescAtual:0.0 ,icon:'indiferente', dias:[1081,1440],anos:[3,4],valor:[0.01,99999999999999999]},
-        { title: 'Faixa 1', color: '#F0011A',desconto:'50% no principal',descontoAtualização:'Não aplicado', valorDesc:0.5,valorDescAtual:0.0 ,icon:'indiferente', dias:[1441,1800],anos:[4,5],valor:[0.01,99999999999999999]},
+        { title: 'Faixa 1', color: '#F0011A',desconto:'50,0% no principal',descontoAtualização:'Não aplicado', valorDesc:0.5,valorDescAtual:0.0 ,icon:'indiferente', dias:[1441,1800],anos:[4,5],valor:[0.01,99999999999999999]},
         { title: 'Faixa 1', color: '#F0011A',desconto:'70% no principal',descontoAtualização:'Não aplicado', valorDesc:0.7,valorDescAtual:0.0 ,icon:'indiferente', dias:[1801,3600],anos:[5,10],valor:[0.01,99999999999999999]},
         { title: 'Faixa 1', color: '#F0011A',desconto:'80% no principal',descontoAtualização:'Não aplicado', valorDesc:0.8,valorDescAtual:0.0 ,icon:'indiferente', dias:[3601,999999999999999999],anos:[10,9999],valor:[0.01,99999999999999999]},
         //faixa 2 
