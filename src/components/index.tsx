@@ -50,21 +50,8 @@ export const GridItem = ({ item }: Props) => {
 
         </div>
         }
-                    
-        {item.title === 'Faixa 1' &&
-        <div className={styles.yorImc}>
-            {item.valorPay123 < 50 && (
-            <>Valor MÁXIMO do desconto: R${item.descTotal123.toFixed(2)}<br/></>
-            )}
-            Valor MÁXIMO do desconto: R${item.descTotal123?.toFixed(2)}<br/>
-            {item.valorPay123 < 50 && (
-            <>Valor MÁXIMO do desconto: R$ 50.00}<br/></>
-            )}
-         Valor a pagar: R$ <strong>{item.valorPay123?.toFixed(2)}</strong><br/>
-        </div>
-        }
-                    
-        {item.title === 'Faixa 2' && (
+                                    
+        {item.title === 'Faixa 1' && (
         <div className={styles.yorImc}>
             {item.validPay !== undefined && item.validPay < 50 ? (
                     <p>
