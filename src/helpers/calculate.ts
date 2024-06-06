@@ -70,7 +70,7 @@ export type faixa = {
                     //descontos nos juros
                     levelCopy.descTotal= levelCopy.juros * levelCopy.valorDesc;
                     levelCopy.descTotalAtual= levelCopy.juros * levelCopy.valorDescAtual;
-                    levelCopy.descTotal123= valor * levelCopy.valorDesc;
+                    levelCopy.descTotal123= Juros + ( valor * levelCopy.valorDesc);
 
                     levelCopy.validPay = levelCopy.valorBase - (levelCopy.valorBase * 0.95);
                     levelCopy.descP50 = levelCopy.valorBase - 50;
@@ -79,7 +79,7 @@ export type faixa = {
                     levelCopy.valorPay = (levelCopy.juros -(levelCopy.juros * levelCopy.valorDesc)) + valor 
                     levelCopy.valorPayAtual = (levelCopy.juros -(levelCopy.juros * levelCopy.valorDescAtual)) + valor 
 
-                    levelCopy.valorPay123 = valor - levelCopy.descTotal123;
+                    levelCopy.valorPay123 = valor - (valor * levelCopy.valorDesc);
                     levelCopy.valorBol= (levelCopy.valorPay+1);
                     levelCopy.valorBol123= (levelCopy.valorPay123+1)
                      
