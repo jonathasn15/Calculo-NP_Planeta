@@ -51,7 +51,7 @@ export const GridItem = ({ item }: Props) => {
         </div>
         }
                     
-        {item.title === 'Faixa 1' &&
+        {item.title === 'Faixa 2' &&
         <div className={styles.yorImc}>
            t Valor MÁXIMO do desconto: R${item.descTotal123?.toFixed(2)}<br/>
          Valor a pagar: R$ <strong>{item.valorPay123?.toFixed(2)}</strong><br/>
@@ -60,7 +60,7 @@ export const GridItem = ({ item }: Props) => {
                     
         {item.title === 'Faixa 1' && (
         <div className={styles.yorImc}>
-            {item.validPay !== undefined && item.valorPay123 < 50 ? (
+            {item.validPay !== undefined && item.descTotal123 < 50 ? (
                     <p>
                         Valor MÁXIMO do desconto: R${item.descP50?.toFixed(2)}<br/>
                         Valor a pagar: R$ <strong>50,00</strong><br/>
@@ -74,9 +74,24 @@ export const GridItem = ({ item }: Props) => {
             </div>
             )}
                     
-       
+         {item.title === 'Faixa 3' &&
+        <div className={styles.yorImc}>
+         Valor MÁXIMO do desconto: R${item.descTotal123?.toFixed(2)}<br/>
+         Valor a pagar: R$ <strong>{item.valorPay123?.toFixed(2)}</strong><br/>
+        </div>
+        }
                     
+        {item.title === 'Faixa 4' &&
+            
+                <div className={styles.yorImc}>
+                Valor MÁXIMO do desconto: R${item.descP100?.toFixed(2)}<br/>
+                Valor pagar: R$ <strong>100,00</strong><br/>
+                Valor do boleto: R$ <strong>101,00</strong>
+                </div>}
+                    
+        </div>
         
+        }
         <div className={styles.gridInfo}>
             <>
             Devedor de <strong>{item.anos[0]}</strong> a <strong>{item.anos[1]}</strong> anos
