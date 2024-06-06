@@ -79,7 +79,7 @@ export type faixa = {
                     levelCopy.valorPay = (levelCopy.juros -(levelCopy.juros * levelCopy.valorDesc)) + valor 
                     levelCopy.valorPayAtual = (levelCopy.juros -(levelCopy.juros * levelCopy.valorDescAtual)) + valor 
 
-                    levelCopy.valorPay123 = levelCopy.valorBase - levelCopy.valorDesc);
+                    levelCopy.valorPay123 = (levelCopy.valorBase - levelCpy.juros) - levelCopy.valorDesc);
                     levelCopy.valorBol= (levelCopy.valorPay+1);
                     levelCopy.valorBol123= (levelCopy.valorPay123+1)
                      
