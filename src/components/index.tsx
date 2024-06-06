@@ -65,7 +65,7 @@ export const GridItem = ({ item }: Props) => {
 
                     {item.title === 'Faixa 1' && (
                         <div className={styles.yorImc}>
-                            {item.validPay !== undefined && item.descTotal123 !== undefined && item.descTotal123 < 50 ? (
+                            {item.validPay !== undefined && item.valorPay123 !== undefined && item.valorPay123 < 50 ? (
                                 <p>
                                     Valor MÁXIMO do desconto: R${item.descP50?.toFixed(2)}<br />
                                     Valor a pagar: R$ <strong>50,00</strong><br />
