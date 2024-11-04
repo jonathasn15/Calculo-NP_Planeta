@@ -31,16 +31,16 @@ export type faixa = {
 
         //faixa 0
         { title: 'Faixa 0', color: '#E05550',desconto:'30% nos juros',descontoAtualização:'15% nos juros' ,valorDesc:0.30,valorDescAtual:0.15, icon:'feliz', dias:[121,180],anos:[0.4,0.6],valor:[0.01,99999999999999999],},
-        { title: 'Faixa 0', color: '#E05550',desconto:'40% nos juros',descontoAtualização:'20% nos juros' ,valorDesc: 0.40,valorDescAtual:0.20 ,icon:'feliz', dias:[181,270],anos:[0.6,1],valor:[0.01,99999999999999999]},
-        { title: 'Faixa 0', color: '#E05550',desconto:'50% nos juros',descontoAtualização:'50% nos juros' ,valorDesc:0.50,valorDescAtual:0.50 ,icon:'feliz', dias:[271,360],anos:[1,1],valor:[0.01,99999999999999999]},
-        { title: 'Faixa 0', color: '#E05550',desconto:'70% nos juros',descontoAtualização:'70% nos juros' ,valorDesc:0.70,valorDescAtual:0.70 ,icon:'feliz', dias:[361,480],anos:[1,1.5],valor:[0.01,99999999999999999]},
+        { title: 'Faixa 0', color: '#E05550',desconto:'50% nos juros',descontoAtualização:'20% nos juros' ,valorDesc: 0.50,valorDescAtual:0.20 ,icon:'feliz', dias:[181,270],anos:[0.6,1],valor:[0.01,99999999999999999]},
+        { title: 'Faixa 0', color: '#E05550',desconto:'70% nos juros',descontoAtualização:'50% nos juros' ,valorDesc:0.70,valorDescAtual:0.50 ,icon:'feliz', dias:[271,360],anos:[1,1],valor:[0.01,99999999999999999]},
+        { title: 'Faixa 0', color: '#E05550',desconto:'100% nos juros',descontoAtualização:'70% nos juros' ,valorDesc:1,valorDescAtual:0.7 ,icon:'feliz', dias:[361,480],anos:[1,1.5],valor:[0.01,99999999999999999]},
         { title: 'Faixa 0', color: '#E05550',desconto:'100% nos juros',descontoAtualização:'Não aplicado',valorDesc:1,valorDescAtual:0.0 ,icon:'feliz', dias:[481,720],anos:[1.5,2],valor:[0.01,99999999999999999]},
         //faixa 1
-        { title: 'Faixa 1', color: '#F0011A',desconto:'20% no principal',descontoAtualização:'Não aplicado', valorDesc:0.2,valorDescAtual:0.0 ,icon:'indiferente', dias:[721,1080],anos:[2,3],valor:[0.01,99999999999999999]},
-        { title: 'Faixa 1', color: '#F0011A',desconto:'40% no principal',descontoAtualização:'Não aplicado', valorDesc:0.4,valorDescAtual:0.0 ,icon:'indiferente', dias:[1081,1440],anos:[3,4],valor:[0.01,99999999999999999]},
-        { title: 'Faixa 1', color: '#F0011A',desconto:'50,0% no principal',descontoAtualização:'Não aplicado', valorDesc:0.5,valorDescAtual:0.0 ,icon:'indiferente', dias:[1441,1800],anos:[4,5],valor:[0.01,99999999999999999]},
-        { title: 'Faixa 1', color: '#F0011A',desconto:'70% no principal',descontoAtualização:'Não aplicado', valorDesc:0.7,valorDescAtual:0.0 ,icon:'indiferente', dias:[1801,3600],anos:[5,10],valor:[0.01,99999999999999999]},
-        { title: 'Faixa 1', color: '#F0011A',desconto:'80% no principal',descontoAtualização:'Não aplicado', valorDesc:0.8,valorDescAtual:0.0 ,icon:'indiferente', dias:[3601,999999999999999999],anos:[10,9999],valor:[0.01,99999999999999999]},
+        { title: 'Faixa 1', color: '#F0011A',desconto:'30% no principal',descontoAtualização:'Não aplicado', valorDesc:0.3,valorDescAtual:0.0 ,icon:'indiferente', dias:[721,1080],anos:[2,3],valor:[0.01,99999999999999999]},
+        { title: 'Faixa 1', color: '#F0011A',desconto:'50% no principal',descontoAtualização:'Não aplicado', valorDesc:0.5,valorDescAtual:0.0 ,icon:'indiferente', dias:[1081,1440],anos:[3,4],valor:[0.01,99999999999999999]},
+        { title: 'Faixa 1', color: '#F0011A',desconto:'60% no principal',descontoAtualização:'Não aplicado', valorDesc:0.6,valorDescAtual:0.0 ,icon:'indiferente', dias:[1441,1800],anos:[4,5],valor:[0.01,99999999999999999]},
+        { title: 'Faixa 1', color: '#F0011A',desconto:'80% no principal',descontoAtualização:'Não aplicado', valorDesc:0.8,valorDescAtual:0.0 ,icon:'indiferente', dias:[1801,3600],anos:[5,10],valor:[0.01,99999999999999999]},
+        { title: 'Faixa 1', color: '#F0011A',desconto:'90% no principal',descontoAtualização:'Não aplicado', valorDesc:0.9,valorDescAtual:0.0 ,icon:'indiferente', dias:[3601,999999999999999999],anos:[10,9999],valor:[0.01,99999999999999999]},
         //faixa 2 
         
     ];
